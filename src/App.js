@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import HomeTemplate from './templates/HomeTemplate'
 class App extends Component {
+  loadRouter = () => {
+    switch(window.location.pathname){
+      case '/home': {
+        return <HomeTemplate/>;
+      };
+      break;
+      // case '/admin':
+      // {
+      //   return <AdminTemplate/>;
+      // };
+      default :
+      {
+        return <HomeTemplate/>
+      }
+    }
+  }
   render() {
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        {this.loadRouter()}
       </div>
     );
   }
