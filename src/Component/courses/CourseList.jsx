@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import CourseItem from '../courses/CourseItem'
 import { getCourseList } from '../redux/actions/course.actions';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 class CourseList extends Component {
     componentDidMount() {
         this.props.onSaveDSKH();
@@ -16,9 +18,13 @@ class CourseList extends Component {
                 />
             })
             return (
-                <div>
+                <Container>
+                    <Row>
+                        
                     {elementCourse}
-                </div>
+
+                    </Row>
+                </Container>
             )
         }else{
             return (
