@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
+import {connect} from 'react-redux'
+import Slider from '../Component/Slider'
 
-import CourseItem from '../Component/courses/CourseItem';
+import CourseList from '../Component/courses/CourseList'
 
-// import {connect} from 'react-redux'
-class HomePage extends Component {
+ class HomePage extends Component {
   render() {
     return (
       <div>
-        <CourseItem/>
+        <Slider/>
+        <CourseList 
+          // data={this.props.DSKH}
+        />
       </div>
     )
   }

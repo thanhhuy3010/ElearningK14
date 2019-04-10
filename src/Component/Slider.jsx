@@ -2,31 +2,47 @@ import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import { Button } from 'react-bootstrap';
+import Background1 from '../images/hutech.png';
+import Background2 from '../images/vlu.jpg';
+// import styled, { keyframes } from 'styled-components';
+// import type { Animation } from './types';
+
 import 'antd/dist/antd.css'
 import '../Styles/HomePage.css';
 
+
+// const Changed = keyframes`
+//     0%: {backgroundImage: url(${Background1});}
+//     50%: {backgroundImage: url(${Background2});}
+//     100%: {backgroundImage: url(${Background1});}
+// `
+
+
+const styles = {
+    backgroundImage: `url(${Background1})`
+}
 
 
 class Slider extends Component {
     render() {
         return (
             <div>
-                <div className="slider">
-                    <div className="back">
-                        {/* <img src="./images/vlu.jpg" alt="" /> */}
-                        <div className="content">
-                            <div className="text">
-                                <h3>Ở đây có tất cả những gì bạn muốn học</h3>
-                                <h3>Tìm kiếm khóa học bạn cần tại đây:</h3>
-                                <Form className="search">
-                                    <FormControl type="text" placeholder="Search" className="mr-sm-xs-2 search__input " />
-                                    <Button className="search__button" variant="outline-success"><i class="fa fa-search"></i></Button>
-                                </Form>
-                            </div>
+                <div className="contain">
+                    <div className="slider" style={styles}></div>
+                    <div className="back" ></div>
+                    <div className="content">
+                        <div className="text">
+                            <h3>Ở đây có tất cả những gì bạn muốn học</h3>
+                            <h3>Tìm kiếm khóa học bạn cần tại đây:</h3>
+                            <Form className="search">
+                                <FormControl type="text" placeholder="Search" className="mr-sm-xs-2 search__input " />
+                                <Button className="search__button" variant="outline-success"><i class="fa fa-search"></i></Button>
+                            </Form>
                         </div>
                     </div>
                 </div>
             </div>
+
         );
     }
 }
