@@ -1,4 +1,4 @@
-import {GET_COURSE_LIST} from '../constants/course.constants'
+import {GET_COURSE_LIST, GET_DETAIL_COURSE} from '../constants/course.constants'
 import Axios from 'axios'
 
 
@@ -16,9 +16,30 @@ export const getCourseList = () => {
     }
 }
 
+export const getDetailCourse = (courseid) => {
+    return(mapstate) => {
+        Axios({
+            method: "GET",
+            url:`http://svcy.myclass.vn/api/QuanLyTrungTam/ChiTietKhoaHoc/${courseid}`
+        }).then(res=> {
+            mapstate(actionGetCourseDetail(res.data))
+        }).catch(err => {
+            console.log('error: ',err);
+        })
+    }
+}
+
+
 export const actionGetCourseList = (courseList) => {
     return {
         type: GET_COURSE_LIST,
         courseList
     }
 } 
+
+export const actionGetCourseDetail = (courseDetail) => {
+    return {
+        type: GET_DETAIL_COURSE,
+        courseDetail
+    }
+}
