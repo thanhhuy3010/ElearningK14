@@ -4,23 +4,12 @@ import FormControl from 'react-bootstrap/FormControl';
 import { Button } from 'react-bootstrap';
 import Background1 from '../images/hutech.png';
 import Background2 from '../images/vlu.jpg';
-// import styled, { keyframes } from 'styled-components';
-// import type { Animation } from './types';
-
-import 'antd/dist/antd.css'
-import '../Styles/HomePage.css';
 
 
-// const Changed = keyframes`
-//     0%: {backgroundImage: url(${Background1});}
-//     50%: {backgroundImage: url(${Background2});}
-//     100%: {backgroundImage: url(${Background1});}
-// `
 
-
-const styles = {
-    backgroundImage: `url(${Background1})`
-}
+// const styles = {
+//     backgroundImage: `url(${Background1})`
+// }
 
 
 class Slider extends Component {
@@ -28,7 +17,7 @@ class Slider extends Component {
         return (
             <div>
                 <div className="contain">
-                    <div className="slider" style={styles}></div>
+                    <div className="slider" ></div>
                     <div className="back" ></div>
                     <div className="content">
                         <div className="text">
@@ -36,7 +25,7 @@ class Slider extends Component {
                             <h3>Tìm kiếm khóa học bạn cần tại đây:</h3>
                             <Form className="search">
                                 <FormControl type="text" placeholder="Search" className="mr-sm-xs-2 search__input " />
-                                <Button className="search__button" variant="outline-success"><i class="fa fa-search"></i></Button>
+                                <Button className="search__button" variant="outline-success"></Button>
                             </Form>
                         </div>
                     </div>
