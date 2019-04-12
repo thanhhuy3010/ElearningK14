@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import CourseList from '../Component/courses/CourseList'
+import '../style/CourseList.css'
  class HomePage extends Component {
   render() {
     return (

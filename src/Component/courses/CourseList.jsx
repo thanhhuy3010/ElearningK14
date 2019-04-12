@@ -12,10 +12,12 @@ class CourseList extends Component {
     render() {
         if(this.props.DSKH){
             const elementCourse = this.props.DSKH.map((course,index)=>{
-                return <CourseItem
+                return(
+                <CourseItem
                     key ={index}
                     course ={course}
                 />
+                ) 
             })
             return (
                 <Container>
