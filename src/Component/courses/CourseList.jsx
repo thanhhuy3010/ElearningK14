@@ -15,7 +15,7 @@ class CourseList extends Component {
     componentDidMount() {
         this.props.onSaveDSKH();
     }
-    
+
 
     render() {
         if (this.props.DSKH) {
@@ -27,11 +27,21 @@ class CourseList extends Component {
             })
             return (
                 <div>
-                    <p style={styles}>Paths are in-depth structured learning journeys that you can take at your own pace and get to your desired outcome.</p>
+                    {/* <div className="panel-wrapper">
+                        <p style={styles}>Paths are in-depth structured learning journeys that you can take at your own pace and get to your desired outcome.</p>
+                        <a href="#show" class="show btn" id="show">Show Full Article</a>
+                        <a href="#hide" class="hide btn" id="hide">Hide Full Article</a>
+                        <div className="listCourse panel">
+                            {elementCourse}
+                        </div>
+                        <div class="fade"></div>
+                    </div> */}
                     <div className="listCourse">
+                        <p><p style={styles}>Paths are in-depth structured learning journeys that you can take at your own pace and get to your desired outcome.</p></p>
                         {elementCourse}
                     </div>
                 </div>
+
 
             )
         } else {
