@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import { connect } from 'react-redux'
 import CourseItem from '../courses/CourseItem'
 import { getCourseList } from '../redux/actions/course.actions';
@@ -11,11 +12,11 @@ const styles = {
     marginBottom: 50
 }
 
+
 class CourseList extends Component {
     componentDidMount() {
         this.props.onSaveDSKH();
     }
-
 
     render() {
         if (this.props.DSKH) {
@@ -41,8 +42,6 @@ class CourseList extends Component {
                         {elementCourse}
                     </div>
                 </div>
-
-
             )
         } else {
             return (
@@ -53,20 +52,23 @@ class CourseList extends Component {
     }
 }
 const mapStateToProps = (state) => {
-    console.log('state', state);
+
+    console.log('state',state);
     return {
-        DSKH: state.storeCourseReducer.CourseList
+        DSKH : state.storeCourseReducer.CourseList
     }
+    
 }
 const mapDispatchToProps = (dispatch) => {
-    console.log('props show: ', dispatch);
+    console.log('props show: ',dispatch);
     return {
-        onSaveDSKH: () => {
+        onSaveDSKH : ()=> {
             dispatch(getCourseList())
         }
     }
-
+    
 }
-export default connect(mapStateToProps, mapDispatchToProps)(CourseList);
+export default connect(mapStateToProps,mapDispatchToProps)(CourseList);
+
 
 

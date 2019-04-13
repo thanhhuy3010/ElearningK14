@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
+
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import FormControl from 'react-bootstrap/FormControl';
 import { Button } from 'react-bootstrap';
 
+
 class Header extends Component {
   render() {
     return (
       <div>
+
         <Navbar bg="light" expand="lg">
           <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -22,6 +25,7 @@ class Header extends Component {
             </Form>
           </Navbar.Collapse>
         </Navbar>
+
       </div>
     );
   }

@@ -24,6 +24,7 @@ class CourseItem extends Component {
       </div>
     );
   }
+
 }
 
 export default CourseItem;
