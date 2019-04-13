@@ -1,34 +1,49 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux'
+
+import { connect } from 'react-redux'
 import CourseItem from '../courses/CourseItem'
 import { getCourseList } from '../redux/actions/course.actions';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
+import '../../Styles/HomePage.css';
+
+const styles = {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginTop: 50,
+    marginBottom: 50
+}
+
+
 class CourseList extends Component {
     componentDidMount() {
         this.props.onSaveDSKH();
     }
-    
+
     render() {
-        if(this.props.DSKH){
-            const elementCourse = this.props.DSKH.map((course,index)=>{
-                return(
-                <CourseItem
-                    key ={index}
-                    course ={course}
+        if (this.props.DSKH) {
+            const elementCourse = this.props.DSKH.map((course, index) => {
+                return <CourseItem
+                    key={index}
+                    course={course}
                 />
-                ) 
             })
             return (
-                <Container>
-                    <Row>
-                        
-                    {elementCourse}
-
-                    </Row>
-                </Container>
+                <div>
+                    {/* <div className="panel-wrapper">
+                        <p style={styles}>Paths are in-depth structured learning journeys that you can take at your own pace and get to your desired outcome.</p>
+                        <a href="#show" class="show btn" id="show">Show Full Article</a>
+                        <a href="#hide" class="hide btn" id="hide">Hide Full Article</a>
+                        <div className="listCourse panel">
+                            {elementCourse}
+                        </div>
+                        <div class="fade"></div>
+                    </div> */}
+                    <div className="listCourse">
+                        <p><p style={styles}>Paths are in-depth structured learning journeys that you can take at your own pace and get to your desired outcome.</p></p>
+                        {elementCourse}
+                    </div>
+                </div>
             )
-        }else{
+        } else {
             return (
                 <h1>404 ERRORS</h1>
             )
@@ -37,6 +52,7 @@ class CourseList extends Component {
     }
 }
 const mapStateToProps = (state) => {
+
     console.log('state',state);
     return {
         DSKH : state.storeCourseReducer.CourseList
@@ -53,5 +69,6 @@ const mapDispatchToProps = (dispatch) => {
     
 }
 export default connect(mapStateToProps,mapDispatchToProps)(CourseList);
+
 
 

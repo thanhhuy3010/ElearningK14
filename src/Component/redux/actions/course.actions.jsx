@@ -1,3 +1,4 @@
+
 import {GET_COURSE_LIST, GET_DETAIL_COURSE} from '../constants/course.constants'
 import Axios from 'axios'
 
@@ -15,6 +16,7 @@ export const getCourseList = () => {
         })
     }
 }
+
 
 export const getDetailCourse = (courseid) => {
     return(mapstate) => {
@@ -35,6 +37,7 @@ export const actionGetCourseList = (courseList) => {
         type: GET_COURSE_LIST,
         courseList
     }
+
 } 
 
 export const actionGetCourseDetail = (courseDetail) => {
@@ -43,3 +46,4 @@ export const actionGetCourseDetail = (courseDetail) => {
         courseDetail
     }
 }
+

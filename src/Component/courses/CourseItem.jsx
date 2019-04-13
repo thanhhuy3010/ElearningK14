@@ -1,26 +1,30 @@
 import React, { Component } from 'react';
-import Col from 'react-bootstrap/Col'
-import {Link} from 'react-router-dom'
-class CourseItem extends Component {
-    render() {
-        let {course} = this.props
-        return (
-          <Link to = {`/coursedetail/` + course.MaKhoaHoc}>
-            <Col md={12} xs={12} className="mb-4 courseItem">
-                <div className="courseCover">
-                  <img src={course.HinhAnh} width='30%' alt="imgs"/>
-                </div>
-                <div className="info">
-                  <div className="nameTitle">
-                    <span>{course.TenKhoaHoc}</span>
-                  </div>
-                  <div><p>Lượt Xem:{course.LuotXem}  </p></div>
-                </div>
-            </Col>
-          </Link>
+import Card from 'react-bootstrap/Card';
 
-        );
-    }
+class CourseItem extends Component {
+  render() {
+    let { course } = this.props
+    return (
+      <div>
+        <div >
+          <Card className="itemCourse">
+            <div className="image">
+              <img src={course.HinhAnh} />
+            </div>
+            <div className="bg">
+              <div className="content">
+                <h3>{course.TenKhoaHoc}</h3>
+                {course.MoTa}
+              </div>
+            </div>
+
+          </Card>;
+        </div>
+
+      </div>
+    );
+  }
+
 }
 
 export default CourseItem;
