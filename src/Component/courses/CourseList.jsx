@@ -38,7 +38,7 @@ class CourseList extends Component {
                         <div class="fade"></div>
                     </div> */}
                     <div className="listCourse">
-                        <p><p style={styles}>Paths are in-depth structured learning journeys that you can take at your own pace and get to your desired outcome.</p></p>
+                        <p style={styles}>Paths are in-depth structured learning journeys that you can take at your own pace and get to your desired outcome.</p>
                         {elementCourse}
                     </div>
                 </div>

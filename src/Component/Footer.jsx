@@ -9,7 +9,21 @@ class Footer extends Component {
         title:'CyberCourse',
         content:(
           <div className="about" >
-             
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, facilis labore. Voluptatem expedita, fugit voluptates repudiandae iusto labore tempora adipisci totam officiis nam repellendus odit corrupti maxime doloribus. Consequatur, deserunt.
+          </div>
+        )
+      },
+      {
+        title:'Address',
+        content:(
+          <div className="address">
+            <p>
+              <b>Office</b>
+            </p>
+            <br/>
+            <span>
+              <i>459 Su Van Hanh Q.10</i>
+            </span>
           </div>
         )
       }
@@ -23,26 +37,8 @@ class Footer extends Component {
             <Row className="mainRow" >
               <Col xs={4} md={4}>
                 <div className="foot-center">
-                  <div className="foot-header">
-                    <h2>CyberCourse</h2>
-                  </div>
-                  <div>
-                    <a href="#">Gioi thieu</a>
-                  </div>
-                  <div>
-                    <a href="#"></a>
-                  </div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
+                  
                 </div>
-              </Col>
-              <Col xs={4} md={4}>
-                demo2
-              </Col>
-              <Col xs={4} md={4}>
-                demo2
               </Col>
             </Row>
           </Container>

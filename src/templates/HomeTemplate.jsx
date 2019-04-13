@@ -9,6 +9,7 @@ import '../Styles/HomePage.css';
 import CourseDetailPage from '../Pages/CourseDetailPage';
 import LoginPage from '../Pages/LoginPage';
 import Footer from '../Component/Footer'
+import ProfileUserPage from '../Pages/ProfileUserPage';
 
 export default class HomeTemplate extends Component {
   render() {
@@ -20,6 +21,7 @@ export default class HomeTemplate extends Component {
                 <Route path='/HomePage' component= {HomePage} />
                 <Route path= '/loginpage' component={LoginPage}/>
                 <Route path = '/coursedetail/:courseid' component={CourseDetailPage}/>
+                <Route path = '/profilePage/:profileid' component = {ProfileUserPage}/>
                 <Route path = '/' exact component={HomePage} />
                 <Footer/>
             </Fragment>
