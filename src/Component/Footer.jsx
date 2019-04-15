@@ -11,8 +11,8 @@ class Footer extends Component {
         title: 'CyberCourse',
         content: (
           <div className="about" >
-            <img src="./images/vlu.jpg" width='50%' alt="img" />
-            <br/>
+            <img src="./images/vlu.jpg" width='30%' alt="img" />
+            <br />
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, facilis labore. Voluptatem expedita, fugit voluptates repudiandae iusto labore tempora adipisci totam officiis nam repellendus odit corrupti maxime doloribus. Consequatur, deserunt.
           </div>
         )
@@ -125,15 +125,22 @@ class Footer extends Component {
       )
     })
 
-  return(
-    <div className='main-footer'>
-      <OverPack key ='x' className='footer1' playScale={0.1}>
-        <QueueAnim className='home-page' type='bottom' key='ul' leaveReverse component={Row}>
-            {childrenToRender}
+    return (
+      <div className='main-footer'>
+        <OverPack key='x' playScale={0.2}>
+          <QueueAnim className='footerhome-page' type='bottom' key='1' leaveReverse >
+          <Container key ='1'>
+          <Row className='myRow' >
+              {childrenToRender}
+            </Row>
+          </Container>
+
           </QueueAnim>
-      </OverPack>
-    </div>
-  )
+        </OverPack>
+
+
+      </div>
+    )
 
 
   }

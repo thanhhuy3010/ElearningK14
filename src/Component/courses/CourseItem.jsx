@@ -18,7 +18,7 @@ class CourseItem extends Component {
               </div>
             </div>
 
-          </Card>;
+          </Card>
         </div>
 
       </div>
