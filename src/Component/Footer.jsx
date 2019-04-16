@@ -4,16 +4,16 @@ import OverPack from 'rc-scroll-anim/lib/ScrollOverPack'
 import QueueAnim from 'rc-queue-anim'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
+import { Link } from 'react-router-dom'
 class Footer extends Component {
   block = () => {
     return [
       {
-        title: 'CyberCourse',
+        title: 'CyberCourse - Hệ thống đào tạo lập trình chuyên sâu theo dự án thực tế.',
         content: (
           <div className="about" >
-            <img src="./images/vlu.jpg" width='30%' alt="img" />
+            <img src="./images/2hF95nBY.png" width='40%' alt="img" />
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, facilis labore. Voluptatem expedita, fugit voluptates repudiandae iusto labore tempora adipisci totam officiis nam repellendus odit corrupti maxime doloribus. Consequatur, deserunt.
           </div>
         )
       },
@@ -21,9 +21,18 @@ class Footer extends Component {
         title: 'Address',
         content: (
           <div className="address">
-            <p>
-              <b>Office</b>
-            </p>
+            <span>
+              <b>Office:</b>
+            </span>
+            <br/>
+            <span>
+              <i>459 Su Van Hanh Q.10</i>
+            </span>
+            <br/>
+            <span>
+              <i>459 Su Van Hanh Q.10</i>
+            </span>
+            <br/>
             <span>
               <i>459 Su Van Hanh Q.10</i>
             </span>
@@ -33,20 +42,24 @@ class Footer extends Component {
       {
         title: 'Language',
         content: (
-          <div>
+          <div className='language'>
             <div>
-              <a href="#">HTML</a>
+              <Link to={`/coursedetail/` + this.props.MaKhoaHoc} >HTML & CSS </Link>
 
             </div>
             <div>
-              <a href="#">HTML</a>
+              <Link to={`/coursedetail/` + this.props.MaKhoaHoc} >JavaScript</Link>
 
             </div>
             <div>
-              <a href="#">HTML</a>
-
+              <Link to={`/coursedetail/` + this.props.MaKhoaHoc} >NodeJS</Link>
             </div>
-
+            <div>
+              <Link to={`/coursedetail/` + this.props.MaKhoaHoc} >ReactJS</Link>
+            </div>
+            <div>
+              <Link to={`/coursedetail/` + this.props.MaKhoaHoc} >Angular</Link>
+            </div>
           </div>
         )
       }
@@ -96,7 +109,7 @@ class Footer extends Component {
           title={null}
           content={null}
         >
-          <h2 className="logo">
+          <h2 className="title">
             {typeof item.title === 'string' &&
               item.title.match(/\.(svg|gif|jpg|jpeg|png|JPG|PNG|GIF|JPEG)$/) ? (
                 <img src={item.title} width='100%' alt='img' />
@@ -129,11 +142,11 @@ class Footer extends Component {
       <div className='main-footer'>
         <OverPack key='x' playScale={0.2}>
           <QueueAnim className='footerhome-page' type='bottom' key='1' leaveReverse >
-          <Container key ='1'>
-          <Row className='myRow' >
-              {childrenToRender}
-            </Row>
-          </Container>
+            <Container key='1'>
+              <Row className='myRow' >
+                {childrenToRender}
+              </Row>
+            </Container>
 
           </QueueAnim>
         </OverPack>

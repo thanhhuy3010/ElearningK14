@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-
+import Container from 'react-bootstrap/Container'
 import { connect } from 'react-redux'
 import CourseItem from '../courses/CourseItem'
 import { getCourseList } from '../redux/actions/course.actions';
 import '../../Styles/HomePage.css';
 
 const styles = {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginTop: 50,
-    marginBottom: 50
+    fontSize: 16,
+    fontWeight: '500',
+    marginTop: 20,
+    marginBottom: 50,
+    textAlign:'left'
 }
 
 
@@ -38,7 +39,11 @@ class CourseList extends Component {
                         <div class="fade"></div>
                     </div> */}
                     <div className="listCourse">
-                        <p style={styles}>Paths are in-depth structured learning journeys that you can take at your own pace and get to your desired outcome.</p>
+                        <Container>
+                            <h1 className='title-list'>FULL COURSES</h1>
+                            <p style={styles}>Whether you’re trying to level up your career, build your side project, or simply play around with programming, you’ve found the right place to start. Explore our programs and courses, try an exercise or two, and join our community of 45 million learners.</p>
+
+                        </Container>
                         {elementCourse}
                     </div>
                 </div>
@@ -53,22 +58,22 @@ class CourseList extends Component {
 }
 const mapStateToProps = (state) => {
 
-    console.log('state',state);
+    console.log('state', state);
     return {
-        DSKH : state.storeCourseReducer.CourseList
+        DSKH: state.storeCourseReducer.CourseList
     }
-    
+
 }
 const mapDispatchToProps = (dispatch) => {
-    console.log('props show: ',dispatch);
+    console.log('props show: ', dispatch);
     return {
-        onSaveDSKH : ()=> {
+        onSaveDSKH: () => {
             dispatch(getCourseList())
         }
     }
-    
+
 }
-export default connect(mapStateToProps,mapDispatchToProps)(CourseList);
+export default connect(mapStateToProps, mapDispatchToProps)(CourseList);
 
 
 

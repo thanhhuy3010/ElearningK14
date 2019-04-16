@@ -124,6 +124,8 @@
 }
 .itemCourse:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+
 }
 .itemCourse .image {
   width: 25%;
@@ -140,18 +142,26 @@
   display: flex;
   align-items: center;
   /* background-color: rgb(206, 204, 204); */
+  text-decoration: none;
+
 }
 .itemCourse .bg .content {
   /*width: 60%; */
   padding-left: 30px;
   text-align: left;
+  color: #000;
+  text-decoration: none;
+
 }
 .listCourse {
   width: 100%;
   overflow: hidden;
-  background-color: #E9EAEA;
+  background-color: #FDFDFC;
   transition: max-height 0.5s ease;
   position: relative;
+  text-align: left;
+  margin-top:50px;
+
   /*margin: auto;
   */
 }
@@ -218,10 +228,32 @@
     margin-bottom: 30px;
     min-height: 200px;
     border-top: 0.5px solid #E9EAEA;
-
+    border-bottom: 1px solid #E9EAEA;
+    padding-bottom: 50px;
   }
   .main-footer .footerhome-page .myRow {
     padding-top: 30px;
     margin: 0;
     }
+  .main-footer .footerhome-page .myRow .block {
+    font-size: 1rem;
+  }
+  .main-footer .footerhome-page .myRow .block .title{
+    font-size: 1.2rem;
+    }
+    .main-footer .footerhome-page .myRow .block .slogan .address{
+      text-align: left
+    }
+    .main-footer .footerhome-page .myRow .block .slogan .language a{
+      text-decoration: none;
+      color: #000;
+    }
+    .main-footer .footerhome-page .myRow .block .slogan .language a:hover{
+      color: rgba(144, 144, 144, 0.707);
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+}
 /* END FOOTER */

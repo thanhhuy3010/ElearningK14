@@ -12,6 +12,7 @@ class CourseDetailPage extends Component {
     return (
       <Row>
         <Col xl={12} md={12} xs={12}>
+          {this.props.DetailCourse.TenKhoaHoc}
           {this.props.DetailCourse.MoTa}
         </Col>
       </Row>
