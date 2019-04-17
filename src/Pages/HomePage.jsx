@@ -13,7 +13,6 @@ import CourseList from '../Component/courses/CourseList'
       <div>
         <Slider/>
         <CourseList 
-          // data={this.props.DSKH}
         />
       </div>
     )

@@ -109,6 +109,7 @@ button {
   width: 80%;
   height: 230px;
   margin: auto;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -151,12 +152,13 @@ button {
   overflow: hidden;
   transition: max-height 0.5s ease;
   position: relative;
+  /* margin-bottom: 10px; */
   /*margin: auto;
   */
 }
 
 /* SHOW - HIDE */
-.panel-wrapper {
+/* .panel-wrapper {
   position: relative;
 }
 
@@ -195,7 +197,6 @@ button {
   margin: 2em auto;
   width: 70%;
   max-height: 100px;
-  /* overflow: hidden; */
   transition: max-height .5s ease;
 }
 .fade {
@@ -203,10 +204,55 @@ button {
   height: 100px;
   margin-top: -100px;
   position: relative;
-}
+} */
 
 
 
 /* SHOW - HIDE */
 
 /* COURSE */
+
+
+/* REVIEW */
+.footer{
+  padding-top: 10px;
+
+}
+.title{
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  border-top: 1px solid #c4c4c4a4;
+}
+.review{
+  display: flex;
+  width: 80%;
+  /* height: 300px; */
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.review .item{
+  width: 30%;
+}
+.review .item .image{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-position: center center;
+  margin-bottom: 30px;
+  background-size: cover;
+
+}
+
+
+
+/* REVIEW */
+
