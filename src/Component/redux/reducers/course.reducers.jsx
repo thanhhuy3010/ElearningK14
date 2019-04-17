@@ -2,7 +2,7 @@ import * as types from '../constants/course.constants'
 
 let stateDefault ={
     CourseList : [] ,
-    CourseDetail: {}
+    CourseDetail: {},
 
 }
 
@@ -19,6 +19,12 @@ const storeCourseReducer = (state = stateDefault,action)=>{
             state.CourseDetail = action.courseDetail
             return{...state};
 
+        }
+        case types.ADD_COURSE:
+        {
+            const updateState = [...state.CourseList, action.addCourse]
+            state.CourseList =updateState;
+            return {...state}
         }
 
             default: return {...state};
