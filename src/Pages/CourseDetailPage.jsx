@@ -12,6 +12,7 @@ class CourseDetailPage extends Component {
     return (
       <Row>
         <Col xl={12} md={12} xs={12}>
+          <img src={this.props.DetailCourse.HinhAnh} alt="hinh"/>
           {this.props.DetailCourse.TenKhoaHoc}
           {this.props.DetailCourse.MoTa}
         </Col>
@@ -30,8 +31,8 @@ const mapstatetoProp = (mapstate) => {
 const DispatchToProps = (dispatch) => {
   console.log('dispatch: ', dispatch);
   return {
-    getDeCourse: (courseID) => {
-      dispatch(getDetailCourse(courseID))
+    getDeCourse: (courseid) => {
+      dispatch(getDetailCourse(courseid))
     }
   }
 }

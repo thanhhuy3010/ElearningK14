@@ -22,7 +22,7 @@ export const getDetailCourse = (courseid) => {
     return(mapstate) => {
         Axios({
             method: "GET",
-            url:`http://svcy.myclass.vn/api/QuanLyTrungTam/ChiTietKhoaHoc/${courseid}`
+            url: `http://svcy.myclass.vn/api/QuanLyTrungTam/ChiTietKhoaHoc/${courseid}`
         }).then(res=> {
             mapstate(actionGetCourseDetail(res.data))
         }).catch(err => {

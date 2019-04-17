@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-
+import ContainerMenu from '../Component/admin/Container'
 class AdminPage extends Component {
     render() {
         return (
             <div>
-                adminPage
+                <ContainerMenu/>
             </div>
         );
     }

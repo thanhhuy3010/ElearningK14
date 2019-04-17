@@ -241,8 +241,12 @@
   .main-footer .footerhome-page .myRow .block .title{
     font-size: 1.2rem;
     }
+    .main-footer .footerhome-page .myRow .block .slogan .about{
+      text-align: left;
+      margin-left: 20px;
+    }
     .main-footer .footerhome-page .myRow .block .slogan .address{
-      text-align: left
+      
     }
     .main-footer .footerhome-page .myRow .block .slogan .language a{
       text-decoration: none;

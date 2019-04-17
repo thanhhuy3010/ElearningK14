@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import HomeTemplate from './templates/HomeTemplate'
+import AdminTemplate from './templates/AdminTemplate'
 class App extends Component {
   loadRouter = () => {
     switch(window.location.pathname){
@@ -8,10 +9,11 @@ class App extends Component {
         return <HomeTemplate/>;
       };
       break;
-      // case '/admin':
-      // {
-      //   return <AdminTemplate/>;
-      // };
+      case '/adminPage':
+      {
+        return <AdminTemplate/>;
+      };
+      break;
       default :
       {
         return <HomeTemplate/>
