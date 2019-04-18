@@ -6,11 +6,10 @@ import '../Styles/HomePage.css';
 import CourseDetailPage from '../Pages/CourseDetailPage';
 import LoginPage from '../Pages/LoginPage';
 import Footer from '../Component/Footer'
-<<<<<<< HEAD
-import UserProfile from '../Pages/UserProfile';
-=======
 import ProfileUserPage from '../Pages/ProfileUserPage';
->>>>>>> 37ce11d7379074c949db50376ebb7232a35356c8
+import SignIn from '../Component/SignIn';
+import SignUp from '../Component/SignUp';
+
 
 export default class HomeTemplate extends Component {
   render() {
@@ -24,11 +23,13 @@ export default class HomeTemplate extends Component {
                 <Route path = '/coursedetail/:courseid' component={CourseDetailPage}/>
                 <Route path = '/profilePage/:profileid' component = {ProfileUserPage}/>
                 <Route path = '/' exact component={HomePage} />
-                <Route path = '/user' exact component={UserProfile} />
+                <Route path = '/user' exact component={ProfileUserPage} />
+                <Route path = '/signin' exact component={SignIn} />
+                <Route path = '/signup' exact component={SignUp} />
+
                 <Footer/>
             </Fragment>
           </BrowserRouter>
-          
       </div>
     )
   }
