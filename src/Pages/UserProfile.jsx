@@ -15,7 +15,7 @@ export default class UserProfile extends Component {
         return (
             <div>
                 <div>
-                    <div className="1">
+                    <div className="profile">
                         {/* <Tabs defaultActiveKey="profile" transition={false} id="noanim-tab-example">
                             <Tab eventKey="profile" title="Profile">
                                 <div className="up">

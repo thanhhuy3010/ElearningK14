@@ -4,9 +4,6 @@ import OverPack from 'rc-scroll-anim/lib/ScrollOverPack'
 import QueueAnim from 'rc-queue-anim'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
-import image1 from '../images/huy.jpg';
-
-
 import { Link } from 'react-router-dom'
 class Footer extends Component {
   block = () => {

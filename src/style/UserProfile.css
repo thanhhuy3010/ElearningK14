@@ -1,3 +1,6 @@
+.profile{
+  padding-top: 100px;
+}
 .boder {
   width: 450px;
   height: 350px;
@@ -9,7 +12,7 @@
 .avatar {
   width: 450px;
   height: 300px;
-  background-color: rgba(173, 216, 230, 0.856);
+  background-color: #EFF5FF;
   /* padding: 20px; */
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -17,7 +20,7 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   text-align: center;
-  border-bottom: 1px solid rgb(226, 216, 216);
+  border-bottom: 1px solid #EFF5FF;
 }
 .avatar .picture {
   width: 200px;
@@ -34,7 +37,7 @@
 .info--1 {
   width: 450px;
   height: 300px;
-  background-color: rgba(173, 216, 230, 0.856);
+  background-color: #EFF5FF;
   padding: 20px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -55,7 +58,7 @@
 .info--2 {
   width: 450px;
   height: 300px;
-  background-color: rgba(173, 216, 230, 0.856);
+  background-color: #EFF5FF;
   padding: 20px;
   margin-top: 25px;
   margin-left: 50px;
@@ -87,7 +90,7 @@
   height: 70px;
   margin: auto;
   margin-top: 20px;
-  background-color: rgba(173, 216, 230, 0.856);
+  background-color: #EFF5FF;
   border: none;
   border-radius: 10px;
   -webkit-border-radius: 10px;
