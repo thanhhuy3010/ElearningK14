@@ -23,9 +23,9 @@ export default class HomeTemplate extends Component {
                 <Route path = '/coursedetail/:courseid' component={CourseDetailPage}/>
                 <Route path = '/profilePage/:profileid' component = {UserProfile}/>
                 <Route path = '/' exact component={HomePage} />
-                <Route path = '/user' exact component={UserProfile} />
-                <Route path = '/signin' exact component={SignIn} />
-                <Route path = '/signup' exact component={SignUp} />
+                <Route path = '/user'  component={UserProfile} />
+                <Route path = '/signin'  component={SignIn} />
+                <Route path = '/signup' component={SignUp} />
 
                 <Footer/>
             </Fragment>
