@@ -9,11 +9,21 @@ class App extends Component {
         return <HomeTemplate/>;
       };
       break;
+      case '/home/': {
+        return <HomeTemplate/>;
+      };
+      break;
+      case '/adminPage/':
+      {
+        return <AdminTemplate/>;
+      };
+      break;
       case '/adminPage':
       {
         return <AdminTemplate/>;
       };
       break;
+
       default :
       {
         return <HomeTemplate/>
