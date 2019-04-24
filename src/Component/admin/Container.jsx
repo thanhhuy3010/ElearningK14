@@ -2,25 +2,34 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Table } from 'react-bootstrap/'
 import HeaderAdmin from './HeaderAdmin';
 import CourseAdminList from './CourseAdminList'
+import UserAdminList from './User/UserAdminList'
+
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import SignIn from '../SignIn';
+import SignUp from '../SignUp';
+
+
+
 class ContainerMenu extends Component {
   componentDidMount() {
-    
   }
   render() {
 
 
     return (
 
-      <Row>
-
+      < Row >
+        <Router>
+        </Router>
         <Col md={3} style={{ background: 'red' }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minus cum, totam, temporibus, delectus harum in minima tempora quibusdam accusamus aspernatur. Quidem voluptatem ipsam optio suscipit! Fuga ipsum inventore voluptatum.
-                </Col>
+        </Col>
         <Col md={9} >
           <HeaderAdmin />
-          <CourseAdminList/>
+          <CourseAdminList />
+          <UserAdminList />
+
         </Col>
-      </Row>
+      </Row >
 
 
     );

@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import { connect } from 'react-redux'
 import CourseItem from '../courses/CourseItem'
 import { getCourseList } from '../redux/actions/course.actions';
+import Teacher from '../Teacher'
 import '../../Styles/HomePage.css';
 
 const styles = {
@@ -10,7 +11,7 @@ const styles = {
     fontWeight: '500',
     marginTop: 20,
     marginBottom: 50,
-    textAlign:'left'
+    textAlign: 'left'
 }
 
 
@@ -45,6 +46,8 @@ class CourseList extends Component {
 
                         </Container>
                         {elementCourse}
+                        <Teacher />
+
                     </div>
                 </div>
             )

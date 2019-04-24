@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
+import background from '../images/huy.jpg'
+
+const styles1 = {
+    backgroundImage: `url(${background})`,
+}
 
 export default class Teacher extends Component {
     render() {
         return (
             <div>
                 <div className="footer">
+                
                     {/* <div className="footer-wrap">
                         <Container>
                             <Row className="mainRow" >
@@ -35,7 +41,7 @@ export default class Teacher extends Component {
                         </Container>
 
                     </div> */}
-                    <h1 className="title">CÁC GƯƠNG MẶT TIÊU BIỂU</h1>
+                    <h1 className="title">GIẢNG VIÊN TIÊU BIỂU</h1>
                     <div className="review">
                         <div className="item">
                             <div className="image" style={styles1}>

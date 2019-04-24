@@ -12,7 +12,6 @@ export const getCourseList = () => {
             dispatch(actionGetCourseList(res.data))
         }).catch(err => {
             console.log('error:' ,err);
-            
         })
     }
 }
@@ -49,8 +48,7 @@ export const actionGetCourseList = (courseList) => {
         courseList
     }
 
-} 
-
+}
 export const actionGetCourseDetail = (courseDetail) => {
     return {
         type: GET_DETAIL_COURSE,

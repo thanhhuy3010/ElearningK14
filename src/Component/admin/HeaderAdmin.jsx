@@ -11,8 +11,6 @@ class HeaderAdmin extends Component {
                             Header
                         </Col>
                     </Row>
-               
-                
             </div>
         );
     }

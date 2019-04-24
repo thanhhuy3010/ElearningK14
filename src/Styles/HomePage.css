@@ -44,8 +44,9 @@
 .contain {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 550px;
   margin: 0;
+  padding-top: 55px;
 }
 .slider {
   width: 100%;
@@ -65,28 +66,24 @@
   /* left: 0; */
   z-index: 2;
 }
+.contain .bgContent{
+  position: absolute;
+  width: 50%;
+  height: 200px;
+  margin-top: 130px;
+  background-color: white;
+  z-index: 2;
+  opacity: 0.3;
+}
 .contain .content {
-  /* display: flex;
-    align-items: center;
-    justify-content: left; */
-  text-align: left;
+  /*display: flex;
+  align-items: center;
+  justify-content: left;
+  */text-align: left;
   position: absolute;
   width: 60%;
-  height: 60%;
-  border-radius: 10px;
-  /*opacity: 0.8;
-    */
-  top: 50%;
-  transform: translate(0, -50%);
-  /* background-color: white; */
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  margin-top: 160px;
+  margin-left: 10px;
   z-index: 3;
 }
 .search {
@@ -104,9 +101,7 @@
   height: 50px;
   width: 100px;
   margin-left: 20px;
-}
-.content .text {
-  padding-top: 10px;
+  line-height: 50px;
 }
 /* SLIDER */
 
@@ -223,6 +218,39 @@
 /* SHOW - HIDE */
 
 /* COURSE */
+
+/* TEACHER */
+.title{
+  margin-bottom: 50px;
+  text-align: center;
+}
+.review{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.review .item{
+  width: 30%;
+  height: 300px;
+}
+.review .item .image{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-size: cover;
+  margin: auto;
+}
+.review .item .text h1{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/* TEACHER */
+
 
 /* FOOTER */
 .main-footer {
