@@ -35,7 +35,7 @@ body {
   top: calc(-100px / 2);
   left: calc(50% - 50px);
 }
-h2 {
+.loginBox1 h2 {
   margin: 0;
   padding: 0 0 20px;
   color: #efed40;

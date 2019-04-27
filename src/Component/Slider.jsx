@@ -19,13 +19,14 @@ class Slider extends Component {
                 <div className="contain">
                     <div className="slider" ></div>
                     <div className="back" ></div>
+                    <div className="bgContent"></div>
                     <div className="content">
                         <div className="text">
                             <h3>Ở đây có tất cả những gì bạn muốn học</h3>
                             <h3>Tìm kiếm khóa học bạn cần tại đây:</h3>
                             <Form className="search">
                                 <FormControl type="text" placeholder="Search" className="mr-sm-xs-2 search__input " />
-                                <Button className="search__button" variant="outline-success"></Button>
+                                <Button className="search__button" variant="outline-success"><i class="material-icons">search</i></Button>
                             </Form>
                         </div>
                     </div>
