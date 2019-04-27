@@ -4,9 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 // import FormControl from 'react-bootstrap/FormControl';
 import { Link } from 'react-router-dom'
-import { Button, NavDropdown } from 'react-bootstrap';
+// import { Button, NavDropdown } from 'react-bootstrap';
 // import SignIn from '../Component/SignIn'
-
+import { connect } from 'react-redux'
 const styles = {
   display: 'flex',
   justifyContent: 'space-between',
@@ -16,7 +16,7 @@ const styles = {
 
 
 
-export default class Header extends Component {
+class Header extends Component {
   // constructor(props) {
   //   super(props);
   //   this.state = {
@@ -37,6 +37,22 @@ export default class Header extends Component {
   //   }
   // }
   render() {
+    const { isAuthen } = this.props.auth;
+    const userLinks = (
+      <div>
+        <Link to="/signin" className="btn btn-link" >Sign In</Link>
+        <Link to="/signup" className="btn btn-link">Sign Up</Link>
+
+      </div>
+
+    );
+    const adminLinks = (
+      <div>
+        <Link to="/signin" className="btn btn-link" >Sign In</Link>
+        <Link to="/signup" className="btn btn-link">Sign Up</Link>
+
+      </div>
+    );
     return (
       <div className="mainHeader" >
         <Navbar className="myNavbar" expand="lg">
@@ -51,8 +67,6 @@ export default class Header extends Component {
               {/* <Button variant="primary" onClick={this.handleClick} label="Action"/>
               {this.getComponent} */}
               <i class="material-icons" style={styles}>account_circle</i>
-              <Link to="/signin" className="btn btn-link" >Sign In</Link>
-              <Link to="/signup" className="btn btn-link">Sign Up</Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -79,4 +93,12 @@ export default class Header extends Component {
     );
   }
 }
-
+NavigationBar.propTypes = {
+  auth: React.propTypes.object.isRequired
+}
+const mapStateToProps = (state) => {
+  return {
+    auth: state.auth
+  }
+}
+export default connect(mapStateToProps)(Header);
