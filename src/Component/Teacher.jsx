@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import background from '../images/huy.jpg'
-
+import OverPack from 'rc-scroll-anim/lib/ScrollOverPack'
+import QueueAnim from 'rc-queue-anim'
 const styles1 = {
     backgroundImage: `url(${background})`,
 }
@@ -9,9 +10,10 @@ export default class Teacher extends Component {
     render() {
         return (
             <div>
-                <div className="footer">
-                
-                    {/* <div className="footer-wrap">
+                <OverPack key ='x' playScale ={0.2}>
+                    <QueueAnim type='bottom' className='teacher' leaveReverse>
+                        
+                            {/* <div className="footer-wrap">
                         <Container>
                             <Row className="mainRow" >
                                 <Col xs={4} md={4}>
@@ -41,36 +43,38 @@ export default class Teacher extends Component {
                         </Container>
 
                     </div> */}
-                    <h1 className="title">GIẢNG VIÊN TIÊU BIỂU</h1>
-                    <div className="review">
-                        <div className="item">
-                            <div className="image" style={styles1}>
-                            </div>
-                            <div className="text">
-                                <h1>Thanh Huy</h1>
-                                <p>Giảng viên chuyên cần</p>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="image" style={styles1}>
-                            </div>
-                            <div className="text">
-                                <h1>Thanh Huy</h1>
-                                <p>Giảng viên chuyên cần</p>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="image" style={styles1}>
-                            </div>
-                            <div className="text">
-                                <h1>Thanh Huy</h1>
-                                <p>Giảng viên chuyên cần</p>
-                            </div>
-                        </div>
+                            <h1 className="title" key='1'>GIẢNG VIÊN TIÊU BIỂU</h1>
+                            <div className="review" key ='1'>
+                                <div className="item">
+                                    <div className="image" style={styles1}>
+                                    </div>
+                                    <div className="text">
+                                        <h1>Thanh Huy</h1>
+                                        <p>Giảng viên chuyên cần</p>
+                                    </div>
+                                </div>
+                                <div className="item">
+                                    <div className="image" style={styles1}>
+                                    </div>
+                                    <div className="text">
+                                        <h1>Thanh Huy</h1>
+                                        <p>Giảng viên chuyên cần</p>
+                                    </div>
+                                </div>
+                                <div className="item">
+                                    <div className="image" style={styles1}>
+                                    </div>
+                                    <div className="text">
+                                        <h1>Thanh Huy</h1>
+                                        <p>Giảng viên chuyên cần</p>
+                                    </div>
+                                </div>
 
-                    </div>
+                            </div>
 
-                </div>
+                    
+                    </QueueAnim>
+                </OverPack>
             </div>
         )
     }

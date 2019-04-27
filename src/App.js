@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import HomeTemplate from './templates/HomeTemplate'
 import AdminTemplate from './templates/AdminTemplate'
 class App extends Component {

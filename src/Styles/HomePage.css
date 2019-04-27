@@ -165,7 +165,10 @@
   /*margin: auto;
   */
 }
-
+.listCourse .title-list{
+font-size: 32px;
+color: #575757
+}
 /* SHOW - HIDE */
 /* .panel-wrapper {
   position: relative;
@@ -220,6 +223,11 @@
 /* COURSE */
 
 /* TEACHER */
+.teacher{
+  padding-top: 50px;
+  border-top: 0.5px solid #e9eaea;
+  min-height: 500px;
+}
 .title{
   margin-bottom: 50px;
   text-align: center;

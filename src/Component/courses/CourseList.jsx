@@ -46,8 +46,7 @@ class CourseList extends Component {
 
                         </Container>
                         {elementCourse}
-                        <Teacher />
-
+                        <Teacher/>
                     </div>
                 </div>
             )
