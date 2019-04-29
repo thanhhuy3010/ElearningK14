@@ -6,9 +6,7 @@ class UserAdminItem extends Component {
         return (
 
             <tr>
-                <th>
-                    {/* <img src={adUser.HinhAnh} width='42px' alt="cover" /> */}
-                </th>
+
                 <th>{adUser.TaiKhoan}</th>
                 <th>{adUser.MatKhau}</th>
                 <th>{adUser.HoTen}</th>

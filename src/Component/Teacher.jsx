@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 import background from '../images/huy.jpg'
+import background2 from '../images/17917440_1429645520390237_5444345646827151540_o.jpg'
+
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack'
 import QueueAnim from 'rc-queue-anim'
 const styles1 = {
     backgroundImage: `url(${background})`,
+}
+const styles2= {
+    backgroundImage: `url(${background2})`,
 }
 
 export default class Teacher extends Component {
@@ -49,16 +54,16 @@ export default class Teacher extends Component {
                                     <div className="image" style={styles1}>
                                     </div>
                                     <div className="text">
-                                        <h1>Thanh Huy</h1>
-                                        <p>Giảng viên chuyên cần</p>
+                                        <h1>Phó Nghĩa Văn</h1>
+                                        <p>Giảng viên tại CyberCourse</p>
                                     </div>
                                 </div>
                                 <div className="item">
-                                    <div className="image" style={styles1}>
+                                    <div className="image" style={styles2}>
                                     </div>
                                     <div className="text">
-                                        <h1>Thanh Huy</h1>
-                                        <p>Giảng viên chuyên cần</p>
+                                        <h1>Lê Quang Song</h1>
+                                        <p>Giảng viên tại CyberCourse - CEO CyberCourse </p>
                                     </div>
                                 </div>
                                 <div className="item">

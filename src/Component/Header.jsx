@@ -37,22 +37,22 @@ class Header extends Component {
   //   }
   // }
   render() {
-    const { isAuthen } = this.props.auth;
-    const userLinks = (
-      <div>
-        <Link to="/signin" className="btn btn-link" >Sign In</Link>
-        <Link to="/signup" className="btn btn-link">Sign Up</Link>
+    // const { isAuthen } = this.props.auth;
+    // const userLinks = (
+    //   <div>
+    // <Link to="/signin" className="btn btn-link" >Sign In</Link>
+    // <Link to="/signup" className="btn btn-link">Sign Up</Link>
 
-      </div>
+    //   </div>
 
-    );
-    const adminLinks = (
-      <div>
-        <Link to="/signin" className="btn btn-link" >Sign In</Link>
-        <Link to="/signup" className="btn btn-link">Sign Up</Link>
+    // );
+    // const adminLinks = (
+    //   <div>
+    //     <Link to="/signin" className="btn btn-link" >Sign In</Link>
+    //     <Link to="/signup" className="btn btn-link">Sign Up</Link>
 
-      </div>
-    );
+    //   </div>
+    // );
     return (
       <div className="mainHeader" >
         <Navbar className="myNavbar" expand="lg">
@@ -67,6 +67,9 @@ class Header extends Component {
               {/* <Button variant="primary" onClick={this.handleClick} label="Action"/>
               {this.getComponent} */}
               <i class="material-icons" style={styles}>account_circle</i>
+              <Link to="/signin" className="btn btn-link" >Sign In</Link>
+              <Link to="/signup" className="btn btn-link">Sign Up</Link>
+
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -93,12 +96,12 @@ class Header extends Component {
     );
   }
 }
-NavigationBar.propTypes = {
-  auth: React.propTypes.object.isRequired
-}
-const mapStateToProps = (state) => {
-  return {
-    auth: state.auth
-  }
-}
-export default connect(mapStateToProps)(Header);
+// NavigationBar.propTypes = {
+//   auth: React.propTypes.object.isRequired
+// }
+// const mapStateToProps = (state) => {
+//   return {
+//     auth: state.auth
+//   }
+// }
+export default Header;

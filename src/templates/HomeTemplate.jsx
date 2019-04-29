@@ -3,13 +3,11 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import HomePage from '../Pages/HomePage'
 import Header from '../Component/Header'
 import '../Styles/HomePage.css';
-
 import CourseDetailPage from '../Pages/CourseDetailPage';
-import LoginPage from '../Pages/LoginPage';
 import Footer from '../Component/Footer'
 import UserProfile from '../Pages/UserProfile';
-import SignIn from '../Component/SignIn';
-import SignUp from '../Component/SignUp';
+import SignIn from '../Pages/SignIn';
+import SignUp from '../Pages/SignUp';
 
 export default class HomeTemplate extends Component {
   render() {
@@ -19,7 +17,6 @@ export default class HomeTemplate extends Component {
           <Fragment>
             <Header />
             <Route path='/HomePage' component={HomePage} />
-            <Route path='/loginpage' component={LoginPage} />
             <Route path='/coursedetail/:courseid' component={CourseDetailPage} />
             <Route path='/profilePage/:profileid' component={UserProfile} />
             <Route path='/' exact component={HomePage} />

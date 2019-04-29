@@ -19,7 +19,7 @@ class UserAdminList extends Component {
                 <Table hover bordered >
                     <thead>
                         <tr>
-                            <th className="text-center"></th>
+                           
                             <th className="text-center">Mã Khóa Học</th>
                             <th className="text-center">Tên Khóa Học</th>
                             <th className="text-center">Người Tạo</th>

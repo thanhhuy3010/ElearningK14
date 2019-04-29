@@ -6,22 +6,19 @@ class HeaderAdmin extends Component {
       <div>
         {/* <Container>
  </Container> */}
-        <Row>
-
-          <Col md={12} lg={12} style={{ padding: 0, margin: 0 }}>
+        
+          <Col md={12} lg={12} style={{ padding: 0, margin: 0,background:'white' }}>
             <div className='headerAdmin'>
-
-              <Navbar className='justify-content-end' expand="lg" variant="light" bg="light">
+              <Navbar className='justify-content-end' expand="lg" variant="light">
                 <Navbar.Collapse className="justify-content-end">
-                  <Navbar.Text className='mr-3'>
-                     <a href="#login">Mark Otto</a>
+                  <Navbar.Text className=''>
+                     <a href="#login">Login</a>
                   </Navbar.Text>
                 </Navbar.Collapse>
               </Navbar>
-
             </div>
           </Col>
-        </Row>
+
       </div>
     );
   }

@@ -1,8 +1,35 @@
 .adminPage{
-    padding: 0;
-    margin: 0
+    /* background: #F0F2F5; */
 }
+.adminPage .myRowAdmin{
+    width: 100%;
+    margin-left: 0;
+}
+.adminPage .myRowAdmin .slidebarAdmin{
+    padding-right: 0;
+    margin-right: 0;
+    padding-left: 0;
+
+}
+.adminPage .myRowAdmin .slidebarAdmin .table-group{
+    width: 100%;
+    margin-top: 50px;
+}
+
 .headerAdmin{
     width: 100%;
     min-height: 40px
+}
+#sidebar-wrapper{
+  min-height: 100vh;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+#sidebar-wrapper .sidebar {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+    color: rgba(50, 50, 50, 0.796);
+    text-align: center
 }

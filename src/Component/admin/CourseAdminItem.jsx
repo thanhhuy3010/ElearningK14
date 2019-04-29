@@ -6,13 +6,13 @@ class CourseAdminItem extends Component {
         return (
 
             <tr>
-                <th>
+                <th className='text-center'>
                     <img src={adCourse.HinhAnh} width='42px' alt="cover" />
                 </th>
-                <th>{adCourse.MaKhoaHoc}</th>
-                <th>{adCourse.TenKhoaHoc}</th>
-                <th>{adCourse.NguoiTao}</th>
-                <th>
+                <th className='text-center'>{adCourse.MaKhoaHoc}</th>
+                <th className='text-center'>{adCourse.TenKhoaHoc}</th>
+                <th className='text-center'>{adCourse.NguoiTao}</th>
+                <th className='text-center'>
                     <Button style = {{width:'80px'}} >
                         <span>
                         <i style={{fontSize:'20px'}} className="material-icons">delete_sweep</i>
