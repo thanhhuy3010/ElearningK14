@@ -17,11 +17,11 @@ class CourseAdminList extends Component {
     })
     return (
       <div className='table-group'>
-        <Container>
+        <Container bordered>
           <Card style={{ padding: '15px' }}>
             <AddCourseModal/>
             <div className="text-center"><h3>Danh sách khóa học</h3></div>
-            <Table hover responsive bordered >
+            <Table  hover bordered >
               <thead>
                 <tr>
                   <th className="text-center">Hình Ảnh</th>

@@ -1,9 +1,11 @@
-.adminPage{
-    /* background: #F0F2F5; */
-}
+/* .adminPage{
+    background: #F0F2F5;
+ 
+} */
 .adminPage .myRowAdmin{
     width: 100%;
     margin-left: 0;
+ 
 }
 .adminPage .myRowAdmin .slidebarAdmin{
     padding-right: 0;
@@ -14,6 +16,7 @@
 .adminPage .myRowAdmin .slidebarAdmin .table-group{
     width: 100%;
     margin-top: 50px;
+    display: table;
 }
 .adminPage .myRowAdmin .slidebarAdmin .table-group .buttonAddCourse{
     color:white;

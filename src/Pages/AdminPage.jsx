@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import CourseAdminList from '../Component/admin/CourseAdminList'
 import { Link, Route } from 'react-router-dom'
-import { Row, Col, Container } from 'react-bootstrap'
+import { Row, Col, Container, Card } from 'react-bootstrap'
 import UserAdminList from '../Component/admin/User/UserAdminList';
 import HeaderAdmin from '../Component/admin/HeaderAdmin';
 class AdminPage extends Component {
   render() {
     return (
-      <div className='adminPage'>
-        <Row className="myRowAdmin">
+      <div className='adminPage' style={{minHeight:'100vh'}}>
+        <Row className="myRowAdmin" >
           <Col md={2} xl={2} className='slidebarAdmin menuBar '>
             <div className=" border-right border-bottom" id="sidebar-wrapper" >
               <div className="sidebar">Cyber Course</div>
@@ -22,7 +22,7 @@ class AdminPage extends Component {
               </div>
             </div>
           </Col>
-          <Col md={10} className='slidebarAdmin' style={{  background: '#F0F2F5'}} >
+          <Col md={10} className='slidebarAdmin' style={{  background: '#F0F2F5',}} >
             <HeaderAdmin />
             <div >
             <Route path='/adminPage/adcourselist' component={CourseAdminList} />
