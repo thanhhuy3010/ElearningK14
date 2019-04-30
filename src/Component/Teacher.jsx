@@ -49,7 +49,7 @@ export default class Teacher extends Component {
 
                     </div> */}
                             <h1 className="title" key='1'>GIẢNG VIÊN TIÊU BIỂU</h1>
-                            <div className="review" key ='1'>
+                            <div className="review" key ='2'>
                                 <div className="item">
                                     <div className="image" style={styles1}>
                                     </div>

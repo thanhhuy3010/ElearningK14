@@ -15,7 +15,11 @@
     width: 100%;
     margin-top: 50px;
 }
-
+.adminPage .myRowAdmin .slidebarAdmin .table-group .buttonAddCourse{
+    color:white;
+    display: flex;
+    align-items: center;
+}
 .headerAdmin{
     width: 100%;
     min-height: 40px

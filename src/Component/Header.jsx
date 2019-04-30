@@ -6,15 +6,11 @@ import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom'
 // import { Button, NavDropdown } from 'react-bootstrap';
 // import SignIn from '../Component/SignIn'
-import { connect } from 'react-redux'
 const styles = {
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center'
 }
-
-
-
 
 class Header extends Component {
   // constructor(props) {
@@ -66,7 +62,7 @@ class Header extends Component {
             <Nav >
               {/* <Button variant="primary" onClick={this.handleClick} label="Action"/>
               {this.getComponent} */}
-              <i class="material-icons" style={styles}>account_circle</i>
+              <i className="material-icons" style={styles}>account_circle</i>
               <Link to="/signin" className="btn btn-link" >Sign In</Link>
               <Link to="/signup" className="btn btn-link">Sign Up</Link>
 
@@ -74,25 +70,6 @@ class Header extends Component {
           </Navbar.Collapse>
         </Navbar>
       </div>
-
-      // <div>
-
-      //   <Navbar bg="light" expand="lg">
-      //     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-      //     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      //     <Navbar.Collapse id="basic-navbar-nav">
-      //       <Nav className="mr-auto">
-      //         <Nav.Link href="#home">Home</Nav.Link>
-      //         <Nav.Link href="#link">Catalog</Nav.Link>
-      //       </Nav>
-
-      //     </Navbar.Collapse>
-      //     <ButtonToolbar>
-      //         <Button className="signIn" >Primary</Button>
-      //     </ButtonToolbar>
-      //   </Navbar>
-
-      // </div>
     );
   }
 }

@@ -1,26 +1,51 @@
 import React, { Component } from 'react';
-import Modal from 'react-bootstrap/Modal'
-class AddCourseModal extends Component {
-constructor(props,text) {
-  super(props,text)
-  this.state = {
-    show :  false
-  }
-}
 
-handleClose() {
-  this.setState({show : false})
-}
-handleShow() {
-  this.setState ({show: true})
-}
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
+import { ButtonToolbar, Button, Modal } from 'react-bootstrap';
+import FormAddCourse from './FormAddCourse';
+
+class AddCourseModal extends Component {
+  constructor(props, text) {
+    super(props, text)
+    this.handleShow = this.handleShow.bind(this);
+    this.handleHide = this.handleHide.bind(this);
+    this.state = {
+      show: false
     }
+  }
+  handleHide() {
+    this.setState({ show: false })
+  }
+  handleShow() {
+    this.setState({ show: true })
+  }
+  render() {
+    return (
+      <>
+        <ButtonToolbar>
+          <Button onClick={this.handleShow} className='buttonAddCourse'>
+            <><i className="material-icons">add</i></>
+            <span>Thêm Khóa Học</span>
+          </Button>
+        </ButtonToolbar>
+        <Modal show={this.state.show} onHide={this.handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Thêm khóa học</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <FormAddCourse/>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.handleHide}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={this.handleHide}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </>
+    );
+  }
 }
 
 export default AddCourseModal;

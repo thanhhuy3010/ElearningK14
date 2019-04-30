@@ -10,13 +10,13 @@ class AdminPage extends Component {
       <div className='adminPage'>
         <Row className="myRowAdmin">
           <Col md={2} xl={2} className='slidebarAdmin menuBar '>
-            <div class=" border-right border-bottom" id="sidebar-wrapper" >
-              <div class="sidebar">Cyber Course</div>
-              <div class="list-group list-group-flush">
-                <Link class="list-group-item list-group-item-action " to='/adminPage/adcourselist'>
+            <div className=" border-right border-bottom" id="sidebar-wrapper" >
+              <div className="sidebar">Cyber Course</div>
+              <div className="list-group list-group-flush">
+                <Link className="list-group-item list-group-item-action " to='/adminPage/adcourselist'>
                   Danh sách khóa học
                 </Link>
-                <Link class="list-group-item list-group-item-action border-bottom" to='/adminPage/userlist' >
+                <Link className="list-group-item list-group-item-action border-bottom" to='/adminPage/userlist' >
                   Danh sách người dùng
                 </Link>
               </div>

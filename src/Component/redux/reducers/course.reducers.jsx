@@ -23,7 +23,7 @@ const storeCourseReducer = (state = stateDefault,action)=>{
         case types.ADD_COURSE:
         {
             const updateState = [...state.CourseList, action.addCourse]
-            state.CourseList =updateState;
+            state.CourseList = updateState;
             return {...state}
         }
 
