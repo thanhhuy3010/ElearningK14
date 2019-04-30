@@ -27,7 +27,7 @@ class AddCourseModal extends Component {
             <span>Thêm Khóa Học</span>
           </Button>
         </ButtonToolbar>
-        <Modal show={this.state.show} onHide={this.handleClose}>
+        <Modal show={this.state.show} onHide={this.handleHide}>
           <Modal.Header closeButton>
             <Modal.Title>Thêm khóa học</Modal.Title>
           </Modal.Header>

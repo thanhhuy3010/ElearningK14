@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Row, Col, Navbar, Container } from 'react-bootstrap'
+import { Col, Navbar } from 'react-bootstrap'
 class HeaderAdmin extends Component {
   render() {
     return (
       <div>
         {/* <Container>
  </Container> */}
-        
           <Col md={12} lg={12} style={{ padding: 0, margin: 0,background:'white' }}>
             <div className='headerAdmin'>
               <Navbar className='justify-content-end' expand="lg" variant="light">

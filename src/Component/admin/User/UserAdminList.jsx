@@ -7,20 +7,18 @@ class UserAdminList extends Component {
   componentDidMount() {
     this.props.SaveDSND();
   }
-
   render() {
     let elmUser = this.props.DSND.map((adUser, index) => {
       return <UserAdminItem 
-        
         key={index}
         adUser={adUser} />
     })
     return (
       <div className='table-group'>
-        <Container bordered>
+        <Container >
         <Card style={{ padding: '15px',width:'100%',overflow:'hidden'}}>
         <div className="text-center"><h3>Danh sách người dùng</h3></div>
-        <Table style={{borderCollapse:'collapse',padding:0}} hover  bordered >
+        <Table style={{borderCollapse:'collapse',padding:0}} hover bordered >
             <thead style={{borderCollapse:'collapse'}}>
               <tr>
                 <th style={{maxWidth:100,}} className="text-center">Tài Khoản</th>
@@ -38,10 +36,7 @@ class UserAdminList extends Component {
             </tbody>
           </Table>
         </Card>
-
-
         </Container>
-
       </div>
     );
   }
@@ -51,7 +46,6 @@ const mapStateToProps = (state) => {
   return {
     DSND: state.storeUserReducer.UserList
   }
-
 }
 const dispatchToProps = (dispatch) => {
   return {

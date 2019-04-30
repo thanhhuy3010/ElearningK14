@@ -25,7 +25,6 @@ class UserAdminItem extends Component {
           </Button>
         </th>
       </tr>
-
     );
   }
 }

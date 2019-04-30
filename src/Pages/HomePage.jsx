@@ -10,7 +10,6 @@ import CourseList from '../Component/courses/CourseList'
       <div>
         <Slider/>
         <CourseList/>
-
       </div>
     )
   }

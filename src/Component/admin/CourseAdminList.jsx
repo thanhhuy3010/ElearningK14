@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import CourseAdminItem from './CourseAdminItem'
-
 import { getCourseList } from '../redux/actions/course.actions'
-import { Table, Card, Container,Modal,Form } from 'react-bootstrap'
+import { Table, Card, Container } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import AddCourseModal from '../courses/AddCourseModal';
 class CourseAdminList extends Component {
@@ -28,7 +27,7 @@ class CourseAdminList extends Component {
                   <th className="text-center">Mã Khóa Học</th>
                   <th className="text-center">Tên Khóa Học</th>
                   <th className="text-center">Người Tạo</th>
-                  <th className="text-center">Action</th>
+                  <th className="text-center">Thao Tác</th>
                 </tr>
               </thead>
               <tbody>
