@@ -38,9 +38,6 @@ class AddCourseModal extends Component {
             <Button variant="secondary" onClick={this.handleHide}>
               Close
             </Button>
-            <Button variant="primary" onClick={this.handleHide}>
-              Save Changes
-            </Button>
           </Modal.Footer>
         </Modal>
       </>

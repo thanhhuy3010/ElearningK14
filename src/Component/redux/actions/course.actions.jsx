@@ -17,17 +17,16 @@ export const getCourseList = () => {
 }
 
 export const addCourseList = (khoahoc) => {
-    console.log(khoahoc);
+
     
     return(dispatch) => {
         Axios({
             method:"POST",
             url:'http://svcy.myclass.vn/api/QuanLyTrungTam/ThemKhoaHoc'
-        }).then(res => {
+        },{khoahoc}).then(res => {
             dispatch(actionAddCourse(res.data))
         }).catch(err => {
             console.log('error:',err);
-            
         })
     }
 }
