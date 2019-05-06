@@ -52,7 +52,7 @@ class Header extends Component {
     return (
       <div className="mainHeader" >
         <Navbar className="myNavbar" expand="lg">
-          <Link to='/HomePage' ><Navbar.Brand>React-Bootstrap</Navbar.Brand></Link>
+          <Link to='/HomePage' ><Navbar.Brand>Cyber Course</Navbar.Brand></Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
